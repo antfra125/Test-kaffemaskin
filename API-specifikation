@@ -1,0 +1,109 @@
+Beskrivning av kaffemaskin
+
+Simpel kaffe masskin med 3 knappar 
+och ett mynt in kast och mynt retur under inkastet
+Spotar ut koppar
+En knapp för svart kaffe 
+och en för att få en Cappuccino 
+och sista knappen för att få
+en varm chocklad.
+Maskigen kan växla pengar
+5 kr svart kaffe 
+8 kr varm chocklad 
+10 kr Cappuccino
+
+--------------------------------------
+
+### Properties
+
+poweredAccess (boolean)
+- if the machine has powered on
+
+waterAccess (boolean)
+- if the machine has acces to water
+
+amountOfCoffe (number) 
+- the amount of ground coffee left in grams
+
+amountOfChocolatePowder (number)
+- the amount of chocolate powder left in grams
+
+amountOfMilk (number)
+- the amount of milk left in cl
+
+numberOfCups (number)
+- the amount of cups left in the machine
+
+coffeePerCup (number)
+- the amount of grounded coffee per cup in grams
+
+amountOfChocolatePowderPerCup (number)
+- the amount of chocolate powder per cup in grams 
+
+cappuccinoMilkPerCup (number)
+- the amount of milf in a cappuccino
+
+hotChocolateMilkPerCup (number)
+- the amount of milk in a hot cup of chocolate in cl:s
+
+insertedMoney (number)
+- that keeps track off the amount of money inserted 
+  then resets when the drink have been served
+
+
+
+### Methods
+
+checkForPower (boolean)
+- check for accses to power
+
+checkForWater (boolean)
+- check for accses to water
+
+insertMoney(amount)
+- let's the user insert money.
+  Returns true if enough money for chosen type of beverage is reached,
+  otherwise false.
+
+returnMoney (amount)
+- let the user get change
+
+fillWithCoffee (amount)
+- fill with ground coffee in grams
+
+fillWithChocolatePowder (amount)
+- fill with chocolatepowder in grams
+
+fillWithMilk (amount)
+- fill with milk in cl:s
+
+fillWithCups (amount)
+- fill the machine with cups
+
+brewBlackcoffee (amount)
+- brew blackcoffee
+  look att insertedMoney to see if the amount of money is enough
+
+brewCappuccino (amount)
+- brew half cup of blackcoffee
+  and fill the rest with milk
+  look att insertedMoney to see if the amount of money is enough
+
+brewHotChocolate ()
+- make hotchocolate
+  look att insertedMoney to see if the amount of money is enough
+
+checkCoffee ()
+- check so there is enough coffee for a cup
+
+checkChocolatePowder ()
+- check so there is enough chocolatepowder for a cup
+
+checkMilk ()
+- check so there is enough milk for a cup
+
+checkCups ()
+- check so there is enough a cup
+
+dispenseCup ()
+- dispense cup
